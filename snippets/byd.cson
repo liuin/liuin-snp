@@ -1,0 +1,24 @@
+'.text.html, .source.js, .source.css':
+  '比亚迪skin链接':
+    'prefix': 'byd-getSkinUrl'
+    'body': """
+      <?php echo $this->getSkinUrl("${1:images}") ?>
+    """
+  '比亚迪链接地址':
+    'prefix': 'byd-geturl'
+    'body': """
+      <?=Mage::getUrl('drive/index/allcars'); ?>
+    """
+  '比亚迪公用头部':
+    'prefix': 'byd-top'
+    'body': """
+      Mage::register('backUrl',$url_mall);
+      Mage::register('loginUrl',$url_login);
+      Mage::register('regUrl',$url_register);
+    <?php echo $this->getChildHtml('topnav');  ?>
+    """
+  '比亚迪底部加返回按钮':
+    'prefix': 'byd-valcode'
+    'body': """
+      <?php echo $this->getChildHtml('valcode');  ?>
+    """

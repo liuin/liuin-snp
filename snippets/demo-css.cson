@@ -1,0 +1,6 @@
+'.source.css':
+  'txt':
+    'prefix': 'txt'
+    'body': """
+
+    """
